@@ -13,11 +13,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Copy REDME.md as the landing page
-      - run: |
-        mkdir -p docs
-        cp README.md docs/index.md
-
       - name: Checkout repository
         uses: actions/checkout@v4
 
