@@ -5,7 +5,11 @@ repo_url: https://github.com/Trappy-Scopes/
 
 nav:
   - Home: README.md
-  - scope-cli: https://trappy-scopes.github.io/trappyscopes
+  - Control Layer Software: https://trappy-scopes.github.io/trappyscopes
+  - trappyframe: https://trappy-scopes.github.io/trappyframe
+  - RaspberryPi Cluster: https://trappy-scopes.github.io/raspberry_shrub
+  - Electronics: notes/electronics.md
+  - Micropython firmware: notes/pico_firmware.md
 
 plugins:
   - search
@@ -55,4 +59,9 @@ markdown_extensions:
   - attr_list
   - md_in_html
   - tables
-  - pymdownx.superfences
+  - pymdownx.superfences:
+      # make exceptions to highlighting of code:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:mermaid2.fence_mermaid_custom
