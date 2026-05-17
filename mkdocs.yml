@@ -23,6 +23,7 @@ extra:
   homepage: https://trappy-scopes.github.io/
 
 theme:
+  favicon: "assets/tsicon.png"
   logo: "assets/tsicon.png"
   name: material
   primary: trappytheme
